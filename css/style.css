@@ -314,6 +314,7 @@ body {
 }
 .form-grup:first-child {
   margin-bottom: 0px;
+  position: relative;
 }
 .form-grup input {
   width: 448px;
@@ -341,9 +342,7 @@ body {
   color: #212121;
   margin-bottom: 12px;
 }
-.testone {
-  position: relative;
-}
+
 .fon {
   position: absolute;
   width: 12px;
@@ -373,9 +372,38 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  margin-bottom: 10px;
 }
 .form-grup ::placeholder {
-  color: greenyellow;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* .agree input[type="checkbox"] {
+  color: red;
+  width: 25px;
+  height: 15px;
+  border: red;
+} */
+.but-send {
+  color: var(--main-bg-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--hov-foc-color);
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
+  margin-top: 30px;
 }
 /*------------разметка  solutions and----------*/
 /*------------разметка vlastivosti----------*/
