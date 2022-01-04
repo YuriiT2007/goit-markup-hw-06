@@ -325,9 +325,7 @@ body {
   box-sizing: border-box;
   padding: 0;
 }
-/* .form-grup input:first-child {
-  position: relative;
-} */
+
 .form-grup label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -345,15 +343,20 @@ body {
   color: #212121;
   margin-bottom: 12px;
 }
-.form-grup input [type="email"] {
+/* .form-grup input [type="email"] {
   position: absolute;
+} */
+.mail-div {
+  position: relative;
+  display: inline-block;
 }
 .fon {
   position: absolute;
   width: 15px;
   height: 12px;
-  left: 0;
-  bottom: 0;
+  display: inline-block;
+  transform: translateY(30px);
+  margin-left: 13.5px;
 }
 .agree label {
   font-size: 14px;
@@ -386,12 +389,6 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* .agree input[type="checkbox"] {
-  color: red;
-  width: 25px;
-  height: 15px;
-  border: red;
-} */
 .but-send {
   color: var(--main-bg-color);
   font-family: inherit;
