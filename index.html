@@ -82,7 +82,7 @@
 
 
 
-  <form class="formfild">
+  <form class="formfild" >
 
     <div class="form-grup">
     <p class="modform">Оставьте свои данные, мы вам перезвоним</p>
@@ -97,23 +97,34 @@
 <input  type="text" class="testone" name="name" id="name" >
 </div>
 
-
 <svg class="fon">
-   <use href="/images/symbol-newt.svg#icon-telefon"></use>
+  <use href="/images/symbolblmn.svg#icon-blackmannew"></use>
 </svg>
+
+
+
 
 </div>
 
 <div class="form-grup">
-<label for="name">Телефон</label>
+<label for="tel">Телефон</label>
+<div class="mail-div">
 <input type="tel" name="tel" id="tel">
 </div>
+<svg class="fon">
+  <use href="/images/symbol-newt.svg#icon-telefon"></use>
+</svg>
+</div>
+
 
 <div class="form-grup">
 <label for="name">Почта</label>
-
+<div class="mail-div">
 <input type="email" name="mail" id="mail">
-
+</div>
+<svg class="fon">
+  <use href="/images/symbol-newt.svg#icon-mail"></use>
+</svg>
 </div>
 
 <div class="form-grup">
@@ -126,11 +137,21 @@ placeholder="Введите текст"
 </div>
 
 
+<div class="blokso">
+<div class="kvadrat"></div>
+<svg class="chekblue">
+  <use href="/images/symbol-newt.svg#icon-vector"></use>
+</svg>
+<span class="sogltex">Соглашаюсь с рассылкой и принимаю <a href=""class="yslovi">Условия договора</a></span>
 
-<div class="agree">
-<input type="checkbox" name="policy" id="policy">
-<label class="allagpee"  for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label> <br>
 </div>
+
+
+
+
+
+
+
 
 
 <button type="submit" class="but-send">Отправить</button>

@@ -296,6 +296,11 @@ body {
   width: 11px;
   height: 11px;
 }
+.closesvg:hover {
+  fill: var(--hov-foc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
+}
 
 .formfild {
   border: 1px solid pink;
@@ -325,13 +330,18 @@ body {
   box-sizing: border-box;
   padding: 0;
 }
-
+.form-grup input:hover {
+  border-color: var(--hov-foc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
+}
 .form-grup label {
   margin-bottom: 4px;
   font-size: 12px;
   color: #757575;
   line-height: 1.16;
   font-weight: 400;
+  letter-spacing: 0.01em;
 }
 .form-grup .modform {
   font-family: Roboto;
@@ -343,9 +353,7 @@ body {
   color: #212121;
   margin-bottom: 12px;
 }
-/* .form-grup input [type="email"] {
-  position: absolute;
-} */
+
 .mail-div {
   position: relative;
   display: inline-block;
@@ -358,13 +366,12 @@ body {
   transform: translateY(30px);
   margin-left: 13.5px;
 }
-.agree label {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+.form-grup:hover {
+  fill: var(--hov-foc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
 }
+
 textarea {
   border-radius: 4px;
   width: 448px;
@@ -382,11 +389,46 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
   margin-bottom: 10px;
 }
+textarea:hover {
+  border-color: var(--hov-foc-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
+}
 .form-grup ::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.blokso {
+  display: flex;
+  position: relative;
+}
+.kvadrat {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-right: 9px;
+}
+.sogltex {
+  font-size: 14px;
+  color: #757575;
+  line-height: 1.16;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  display: bloc;
+}
+.yslovi {
+  color: #188ce8;
+}
+.chekblue {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
 }
 
 .but-send {
@@ -406,15 +448,19 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: var(--hov-foc-color);
   margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.but-send:hover {
+  background-color: #188ce8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: var(--hov-foc-color);
 }
 /*------------разметка  solutions and----------*/
 /*------------разметка vlastivosti----------*/
 .box-section {
   padding-top: 94px;
 }
-/* .peculiar {
-        display: none;
-    } */
+
 .vlastivosti {
   list-style: none;
   display: flex;
