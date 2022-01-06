@@ -432,7 +432,7 @@ textarea:hover {
   margin-left: 10px;
 }
 .gemor input:checked + .chekblue {
-  background-image: url(/images/ichecki.svg);
+  background-image: url(../images/ichecki.svg);
   background-size: contain;
   border: 2px solid var(--hov-foc-color);
   background-color: var(--hov-foc-color);
@@ -445,7 +445,9 @@ textarea:hover {
   letter-spacing: 0.03em;
   display: bloc;
 }
-
+.yslovi {
+  color: var(--hov-foc-color);
+}
 .but-send {
   color: var(--main-bg-color);
   font-family: inherit;
