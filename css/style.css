@@ -311,7 +311,7 @@ body {
   padding: 40px;
 }
 .form-grup {
-  border: 1px solid greenyellow;
+  border: 1px solid transparent;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -339,8 +339,11 @@ body {
 
 input:not(:placeholder-shown),
 input:not(:placeholder-shown) + .fon {
-  fill: red;
-  border-color: red;
+  fill: var(--hov-foc-color);
+  border-color: var(--hov-foc-color);
+}
+textarea:not(:placeholder-shown) {
+  border-color: var(--hov-foc-color);
 }
 .form-grup label {
   margin-bottom: 4px;
@@ -407,9 +410,8 @@ textarea:hover {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.blokso {
+.gemor {
   display: flex;
-  position: relative;
 }
 .kvadrat {
   display: block;
@@ -417,8 +419,21 @@ textarea:hover {
   height: 15px;
   border-radius: 4px;
   border: 2px solid black;
-  margin-left: 10px;
+  border-color: #212121;
+}
+.chekblue {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #212121;
   margin-right: 9px;
+}
+.gemor input:checked + .chekblue {
+  background-image: url(/images/ichecki.svg);
+  background-size: contain;
+  border: 2px solid var(--hov-foc-color);
+  background-color: var(--hov-foc-color);
 }
 .sogltex {
   font-size: 14px;
@@ -427,15 +442,6 @@ textarea:hover {
   font-weight: 400;
   letter-spacing: 0.03em;
   display: bloc;
-}
-.yslovi {
-  color: #188ce8;
-}
-.chekblue {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  border: 1px solid black;
 }
 
 .but-send {
