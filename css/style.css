@@ -373,7 +373,7 @@ textarea:not(:placeholder-shown) {
   width: 15px;
   height: 12px;
   display: inline-block;
-  transform: translateX(-434px);
+  transform: translateX(-434.5px);
   margin-top: 14px;
 }
 .form-grup:hover {
