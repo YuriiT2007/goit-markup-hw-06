@@ -420,6 +420,7 @@ textarea:hover {
   border-radius: 4px;
   border: 2px solid black;
   border-color: #212121;
+  display: none;
 }
 .chekblue {
   display: block;
@@ -428,9 +429,10 @@ textarea:hover {
   border-radius: 4px;
   border: 2px solid #212121;
   margin-right: 9px;
+  margin-left: 10px;
 }
 .gemor input:checked + .chekblue {
-  background-image: url(./images/ichecki.svg);
+  background-image: url(/images/ichecki.svg);
   background-size: contain;
   border: 2px solid var(--hov-foc-color);
   background-color: var(--hov-foc-color);
