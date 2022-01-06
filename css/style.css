@@ -289,8 +289,9 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
+  border: transparent;
 }
 .closesvg {
   width: 11px;
@@ -303,7 +304,7 @@ body {
 }
 
 .formfild {
-  border: 1px solid pink;
+  border: 1px solid transparent;
   width: 528px;
   height: auto;
   margin-left: auto;
