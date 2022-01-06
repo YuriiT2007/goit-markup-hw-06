@@ -430,7 +430,7 @@ textarea:hover {
   margin-right: 9px;
 }
 .gemor input:checked + .chekblue {
-  background-image: url(/images/ichecki.svg);
+  background-image: url(../images/ichecki.svg);
   background-size: contain;
   border: 2px solid var(--hov-foc-color);
   background-color: var(--hov-foc-color);
