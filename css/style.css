@@ -322,12 +322,13 @@ body {
   margin-bottom: 0px;
   position: relative;
 }
+
 .form-grup input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
   background: #ffffff;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid pink;
   box-sizing: border-box;
   padding: 0;
   padding-left: 30px;
@@ -368,6 +369,8 @@ textarea:not(:placeholder-shown) {
 .mail-div {
   position: relative;
   display: inline-block;
+  background-color: greenyellow;
+  border-color: yellow;
 }
 
 .fon {
@@ -380,7 +383,7 @@ textarea:not(:placeholder-shown) {
 }
 .form-grup:hover,
 .form-grup:focus {
-  fill: greenyellow;
+  fill: pink;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: var(--hov-foc-color);
 }
@@ -404,7 +407,6 @@ textarea {
 }
 textarea:hover,
 textarea:focus {
-  border-color: var(--hov-foc-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: var(--hov-foc-color);
 }
